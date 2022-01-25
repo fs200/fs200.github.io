@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body
+{
+background:url("bg.png");
+background-size:cover;
+}
+.grass
+{
+width:1000px;
+height:100px;
+background:url("img/grass_top.png");
+transform: rotateX(150deg);
+transform:prespective(800px);
+}
+.slot_left
+{
+width:84px;
+height:88px;
+background:url("img/slot_left.png");
+display: inline-block;
+}
+.slot_mid
+{
+width:80px;
+height:88px;
+background:url("img/slot_mid.png");
+display: inline-block;
+margin-left:-4px;
+}
+.slot_right
+{
+width:84px;
+height:88px;
+background:url("img/slot_right.png");
+display: inline-block;
+margin-left:-4px;
+}
+.selecticon
+{
+width:96px;
+height:96px;
+background:url("img/selecticon.png");
+display: inline-block;
+position:relative;
+margin-top:-4px;
+margin-left:-8px;
+margin-right:-8px;
+filter:opacity(0);
+}
+.selecticon:hover
+{
+filter:opacity(1);
+}
+.inventory
+{
+margin-left:40%;
+margin-top:45%;
+transform:scale(1.2);
+}
+</style>
+</head>
+<body>
+<img src="bg.png" />
+<div class="inventory">
+
+<div class="slot_left"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_mid"><div class="selecticon"></div></div>
+<div class="slot_right"><div class="selecticon"></div></div>
+
+</div>
+
+</body>
+</html>
