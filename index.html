@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maxium-scale=1.0,minium-scale=0.5">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maxium-scale=1.0,minium-scale=0.1">
 <html>
 <head>
 <style> 
@@ -12,7 +12,9 @@ box-shadow: inset 0 0 5vw 0 black;
 }
 body
 {
-background:url("bg.png");background-size:cover;
+background:url("bg.png");
+background-size:cover;
+background-position-x:center;
 
 }
 .inventory
@@ -51,25 +53,25 @@ filter:opacity(1);
 {
 filter:opacity(1);
 }
+
+
 .item_phial
 {
 background:url("img/item_phial.png");
 }
-
 .item_eye
 {
 background:url("img/item_eye.png");
 }
-
 .item_more
 {
 background:url("img/more.png");
 }
-
 .item_photo
 {
 background:url("img/item_photo.png");
 }
+
 
 [class^="item_"]
 {width:80%;height:0;padding-bottom:80%;margin-top:-85%;margin-left:5%;background-size:cover;z-index: 2;position: relative;pointer-events: none;}
