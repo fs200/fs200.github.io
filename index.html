@@ -26,12 +26,22 @@ transform:prespective(800px);
 .inventory
 {width:50%;height:0;padding-bottom:5.56%;margin-left: 25%;margin-top:40%;}
 
-.slot_left
+.slot_tip
 {
-width:12.08%;
+width:1.098%;
 height:0;
 padding-top:10.98%;
-background:url("img/slot.png");
+background:url("img/slot_tip.png");
+background-size:cover;
+display: inline-block;
+float: left;
+}
+.slot_left
+{
+width:10.98%;
+height:0;
+padding-top:10.98%;
+background:url("img/slot_left.png");
 background-size:cover;
 display: inline-block;
 float: left;
@@ -57,23 +67,41 @@ float: left;
 
 display: inline-block;
 }
+
+.text
+{width: 300%;color: white;font-size: 64px;position: fixed;bottom: 100%;left: -100%;text-align: center;}
+
 .selecticon
-{width: 111%;height: 0;padding-top: 111%;margin-top: -105.5%;margin-left: -5.5%;background:url("img/selecticon.png");background-size: cover;display: inline-block;filter:opacity(0);float: left;}
+{width: 120%;height: 0;padding-bottom: 120%;margin-top: -120%;margin-left: -15%;background:url("img/selecticon.png");background-size: cover;display: inline-block;filter:opacity(0);z-index: 0;float: left;}
+
 .selecticon:hover
 {
 filter:opacity(1);
 }
 
-.item
+.item_phial
 {
-width:80%;
-height:0;
-padding-bottom:80%;
-margin-top:-85%;
-margin-left:10%;
-background:url("img/item_eye.png");
-background-size:cover;
+background:url("img/item_phial.png");
 }
+
+.item_eye
+{
+background:url("img/item_eye.png");
+}
+
+.item_more
+{
+background:url("img/more.png");
+}
+
+.item_photo
+{
+background:url("img/item_photo.png");
+}
+
+.item_phial, .item_eye, .item_more, .item_photo
+{width:80%;height:0;padding-bottom:80%;margin-top:-85%;margin-left:5%;background-size:cover;z-index: 2;position: relative;pointer-events: none;}
+
 
 </style>
 </head>
@@ -81,15 +109,16 @@ background-size:cover;
 
 <div class="inventory">
 <div class="border"></div>
-<div class="slot_left"><div class="selecticon"></div><div class="item"></div></div>
+<div class="slot_tip"></div>
+<div class="slot_left"><div class="selecticon"><div class="text">Diefault</div></div><div class="item_eye"></div></div>
+<div class="slot_mid"><div class="selecticon"><div class="text">The Veil</div></div><div class="item_phial"></div></div>
+<div class="slot_mid"><div class="selecticon"><div class="text">Photos</div></div><div class="item_photo"></div></div>
 <div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
 <div class="slot_mid"><div class="selecticon"></div></div>
 <div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_mid"><div class="selecticon"></div></div>
 <div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
 <div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_right"><div class="selecticon"></div><div class="item"></div></div>
+<div class="slot_right"><div class="selecticon"><div class="text">More</div></div><div class="item_more"></div></div>
 
 </div>
 
