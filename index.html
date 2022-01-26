@@ -15,15 +15,8 @@ body
 background:url("bg.png");background-size:cover;
 
 }
-
-body:hover{
-
- 
-
-}
-
 .inventory
-{width:50%;height:0;padding-bottom:5.56%;margin-left: 25%;margin-top:75vh;}
+{width: 50vw;height: 5.56vw;/* padding-bottom:5.56%; */margin-left: 25%;margin-top:75vh;}
 
 .slot_tip{background:url("img/slot_tip.png");}
 
@@ -45,16 +38,19 @@ float: left;
 .slot_tip{width:1.098%;}
 
 .text
-{width: 300%;color: white;font-size: 2vw;position: fixed;bottom: 100%;left: -100%;text-align: center;font-family: "Times New Roman", Times, serif;text-shadow: 0.2vw 0.2vw black;}
+{color: white;font-size: 2vw;position: fixed;text-align: center;font-family: "Times New Roman", Times, serif;text-shadow: 0.2vw 0.2vw black;filter:opacity(0);width:inherit;margin-top:-4vh;}
 
 .selecticon
-{width: 120%;height: 0;padding-bottom: 120%;margin-top: -120%;margin-left: -15%;background:url("img/selecticon.png");background-size: cover;display: inline-block;filter:opacity(0);z-index: 0;float: left;}
+{width: 13.04%;height: 0;padding-bottom: 13.04%;background:url("img/selecticon.png");background-size: cover;display: inline-block;filter:opacity(0);z-index: 0;float: left;position: relative;margin-left: -0.5494%;margin-right: -1.51%;margin-top: -13.03%;}
 
+.selecticon:hover + .text 
+{
+filter:opacity(1);
+}
 .selecticon:hover
 {
 filter:opacity(1);
 }
-
 .item_phial
 {
 background:url("img/item_phial.png");
@@ -83,17 +79,34 @@ background:url("img/item_photo.png");
 <body>
 
 <div class="inventory">
+
 <div class="border"></div>
 <div class="slot_tip"></div>
-<div class="slot_left"><a href="diefault.html"><div class="selecticon"><div class="text">Diefault</div></div></a><div class="item_eye"></div></div>
-<div class="slot_mid"><div class="selecticon"><div class="text">The Veil</div></div><div class="item_phial"></div></div>
-<div class="slot_mid"><div class="selecticon"><div class="text">Photos</div></div><div class="item_photo"></div></div>
-<div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_mid"><div class="selecticon"></div></div>
-<div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_mid"><div class="selecticon"></div><div class="item"></div></div>
-<div class="slot_right"><div class="selecticon"><div class="text">More</div></div><div class="item_more"></div></div>
+<div class="slot_left"><div class="item_eye"></div></div>
+<div class="slot_mid"><div class="item_phial"></div></div>
+<div class="slot_mid"><div class="item_photo"></div></div>
+<div class="slot_mid"><div class="item"></div></div>
+<div class="slot_mid"></div>
+<div class="slot_mid"><div class="item"></div></div>
+<div class="slot_mid"><div class="item"></div></div>
+<div class="slot_mid"><div class="item"></div></div>
+<div class="slot_right"><div class="item_more"></div></div>
+
+
+<div class="selecticon" onclick="window.location.href='diefault.html';"></div>
+<div class="text">Diefault</div>
+
+<div class="selecticon"></div>
+<div class="text">The Veil</div>
+<div class="selecticon"></div>
+<div class="text">Photos</div>
+<div class="selecticon"></div>
+<div class="selecticon"></div>
+<div class="selecticon"></div>
+<div class="selecticon"></div>
+<div class="selecticon"></div>
+<div class="selecticon"></div>
+<div class="text">More</div>
 
 </div>
 
